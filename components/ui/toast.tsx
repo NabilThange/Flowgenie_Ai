@@ -39,8 +39,6 @@ const Toast = React.forwardRef<
 })
 Toast.displayName = ToastPrimitives.Root.displayName
 
-const ToastTrigger = ToastPrimitives.Trigger
-
 const ToastClose = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Close>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Close>
@@ -95,7 +93,7 @@ const ToastAction = React.forwardRef<
 ))
 ToastAction.displayName = ToastPrimitives.Action.displayName
 
-export { ToastProvider, ToastViewport, Toast, ToastTrigger, ToastTitle, ToastDescription, ToastClose, ToastAction }
+export { ToastProvider, ToastViewport, Toast, ToastTitle, ToastDescription, ToastClose, ToastAction }
 
 import { useToast as useToastOriginal } from "@/components/ui/use-toast"
 
