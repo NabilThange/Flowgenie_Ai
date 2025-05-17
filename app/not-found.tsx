@@ -1,9 +1,11 @@
+"use client"
+
 import Link from "next/link"
 
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-zinc-950 via-zinc-900 to-black px-4">
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#7B61FF]/10 rounded-full filter blur-3xl animate-pulse"></div>
         <div
           className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#A47CF3]/10 rounded-full filter blur-3xl animate-pulse"
