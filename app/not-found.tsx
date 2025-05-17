@@ -1,6 +1,4 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
 
 export default function NotFound() {
   return (
@@ -18,11 +16,26 @@ export default function NotFound() {
         <h2 className="text-2xl font-semibold text-zinc-200">Page Not Found</h2>
         <p className="text-zinc-400 max-w-md">The page you're looking for doesn't exist or has been moved.</p>
         
-        <Link href="/" className="inline-block">
-          <Button variant="outline" className="gap-2">
-            <ArrowLeft className="h-4 w-4" />
-            Back to Home
-          </Button>
+        <Link 
+          href="/" 
+          className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-white bg-transparent border border-zinc-700 rounded-md hover:bg-zinc-800 transition-colors"
+        >
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="16" 
+            height="16" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            className="w-4 h-4"
+          >
+            <path d="m12 19-7-7 7-7"/>
+            <path d="M19 12H5"/>
+          </svg>
+          Back to Home
         </Link>
       </div>
     </div>
